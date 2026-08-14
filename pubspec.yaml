@@ -1,0 +1,65 @@
+name: katian_pro_compagnietp_app
+description: "Katian Expédition Transporteur — application compagnie TP"
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.9.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  dio: ^5.8.0+1
+  flutter_secure_storage: ^9.2.4
+  provider: ^6.1.5
+  intl: ^0.20.2
+  google_fonts: ^6.2.1
+  pdf: ^3.11.3
+  printing: ^5.14.2
+  path_provider: ^2.1.5
+  open_filex: ^4.7.0
+  mobile_scanner: ^6.0.2
+  permission_handler: ^11.4.0
+  audioplayers: ^6.1.0
+  image_picker: ^1.2.2
+  qr_flutter: ^4.1.0
+  firebase_core: ^3.13.0
+  firebase_messaging: ^15.2.5
+  flutter_local_notifications: ^20.1.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+  flutter_launcher_icons: ^0.14.4
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: assets/images/katian-icon.png
+  adaptive_icon_background: "#FFFFFF"
+  adaptive_icon_foreground: assets/images/katian-icon-foreground.png
+  web:
+    generate: true
+    image_path: assets/images/katian-logo.png
+    background_color: "#FFFFFF"
+    theme_color: "#E30613"
+  windows:
+    generate: true
+    image_path: assets/images/katian-logo.png
+  macos:
+    generate: true
+    image_path: assets/images/katian-logo.png
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/katian-logo.png
+    - assets/images/katian-logo-transparent.png
+    - assets/images/katian-icon.png
+    - assets/images/katian-icon-foreground.png
+    - assets/images/katian-splash-logo.png
+    - assets/sounds/
