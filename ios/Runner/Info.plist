@@ -46,6 +46,14 @@
 	</array>
 	<key>NSCameraUsageDescription</key>
 	<string>La caméra est utilisée pour scanner les QR codes des colis et bordereaux.</string>
+	<!-- upgrader / url_launcher : ouvrir l'App Store -->
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>itms</string>
+		<string>itms-apps</string>
+		<string>https</string>
+		<string>http</string>
+	</array>
 	<key>CADisableMinimumFrameDurationOnPhone</key>
 	<true/>
 	<key>UIApplicationSupportsIndirectInputEvents</key>
