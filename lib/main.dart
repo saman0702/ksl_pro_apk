@@ -5,6 +5,7 @@ import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:intl/date_symbol_data_local.dart';
 import 'package:provider/provider.dart';
 
+import 'core/app_upgrader.dart';
 import 'core/config.dart';
 import 'core/firebase_init.dart';
 import 'core/theme.dart';
@@ -57,7 +58,7 @@ class KatianProApp extends StatelessWidget {
         GlobalWidgetsLocalizations.delegate,
         GlobalCupertinoLocalizations.delegate,
       ],
-      home: const BootstrapGate(),
+      home: wrapWithAppUpgrader(const BootstrapGate()),
       builder: (context, child) {
         final isDark = Theme.of(context).brightness == Brightness.dark;
         SystemChrome.setSystemUIOverlayStyle(
